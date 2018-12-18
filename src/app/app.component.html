@@ -1,67 +1,36 @@
-<header>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="logomarca">
-                    <a href="">
-                        <img src="../assets/images/superizzi-logo-white.png" alt="Logomarca Superizzi">
-                    </a>
-                </div>
-                <div class="pre-menu">
-
-                    <a href="" class="btn btn-yellow"> Criar </a>
-                    <a href=""> <i class="far fa-bell"></i> Avisos </a>
-                    <a href=""> <i class="far fa-user"></i> Perfil </a>
-                    <a href=""> <i class="fas fa-sign-out-alt"></i> Sair </a>
-                </div>
-            </div>
+<header *ngIf="currentUser">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="logomarca">
+          <a href="">
+            <img
+              src="../assets/images/superizzi-logo-white.png"
+              alt="Logomarca Superizzi"
+            />
+          </a>
         </div>
+        <div class="pre-menu">
+          <a href="" class="btn btn-yellow"> Criar </a>
+          <a href=""> <i class="far fa-bell"></i> Avisos </a>
+          <a href=""> <i class="far fa-user"></i> Perfil </a>
+          <a href="#" (click)="logout()">
+            <i class="fas fa-sign-out-alt"></i> Sair
+          </a>
+        </div>
+      </div>
     </div>
+  </div>
 </header>
 
-<!-- <router-outlet></router-outlet> -->
-<div class="slide-header">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <h2> Dashboard </h2>
-            </div>
-        </div>
-    </div>
-</div>
+<router-outlet></router-outlet>
 
-<div class="container-fluid main-content">
-
+<footer *ngIf="currentUser">
+  <div class="container-fluid">
     <div class="row">
-        <div class="col-md-2 left-menu">
-            <ul class="menu">
-                <li class="disabled">Professor </li>
-                <li><a href=""> Questões </a> </li>
-                <li><a href=""> Desafios </a> </li>
-                <li><a href=""> Salas de Aula </a> </li>
-                <li><a href=""> Alunos </a> </li>
-                <li class="disabled">Superizzi </li>
-                <li><a href=""> Favoritos </a> </li>
-                <li><a href=""> Desafios Prontos </a> </li>
-                <li><a href=""> Novidades </a> </li>
-            </ul>
-        </div>
-        <div class="col-md-10 content">
-            <div class="row-special">
-                <h4> Ultimas Noticias do Blog </h4>
-            </div>
-
-        </div>
+      <div class="col-md-12 text-center">
+        Desenvolvimento Leandro Araujo / Rodrigo Fioravante / Pablo Diniz
+      </div>
     </div>
-
-</div>
-
-<footer>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                Desenvolvimento Leandro Araujo / Rodrigo Fioravante / Pablo Diniz
-            </div>
-        </div>
-    </div>
+  </div>
 </footer>
