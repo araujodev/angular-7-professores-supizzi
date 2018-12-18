@@ -1,5 +1,7 @@
 # AngularProfessores
 
+http://jasonwatmore.com/post/2018/11/16/angular-7-jwt-authentication-example-tutorial
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.3.
 
 ## Development server
