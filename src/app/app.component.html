@@ -1,29 +1,67 @@
-<div class="content">
-  <div class="wrapper">
-    <!-- Sidebar -->
-    <nav id="sidebar">
-      <div class="sidebar-header">
-        <img src="../assets/images/superizzi-logo-white.png" alt="Logomarca" />
-      </div>
+<header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="logomarca">
+                    <a href="">
+                        <img src="../assets/images/superizzi-logo-white.png" alt="Logomarca Superizzi">
+                    </a>
+                </div>
+                <div class="pre-menu">
 
-      <ul class="list-unstyled components">
-        <p>Menu do Professor</p>
-        <li><a href="#">Minhas Questões</a></li>
-        <li><a href="#">Meus Desafios</a></li>
-        <li><a href="#">Salas de Aula</a></li>
-        <li>
-          <a href="#">Desafios <b>Superizzi</b></a>
-        </li>
-        <li>
-          <a href="#">Questões <b>Superizzi</b></a>
-        </li>
-      </ul>
-    </nav>
-    <div class="slide-header">
-      <div class="container-fluid">
-        <div class="col-md-12"><h2>Dashboard</h2></div>
-      </div>
+                    <a href="" class="btn btn-yellow"> Criar </a>
+                    <a href=""> <i class="far fa-bell"></i> Avisos </a>
+                    <a href=""> <i class="far fa-user"></i> Perfil </a>
+                    <a href=""> <i class="fas fa-sign-out-alt"></i> Sair </a>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+</header>
+
+<!-- <router-outlet></router-outlet> -->
+<div class="slide-header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h2> Dashboard </h2>
+            </div>
+        </div>
+    </div>
 </div>
-<router-outlet></router-outlet>
+
+<div class="container-fluid main-content">
+
+    <div class="row">
+        <div class="col-md-2 left-menu">
+            <ul class="menu">
+                <li class="disabled">Professor </li>
+                <li><a href=""> Questões </a> </li>
+                <li><a href=""> Desafios </a> </li>
+                <li><a href=""> Salas de Aula </a> </li>
+                <li><a href=""> Alunos </a> </li>
+                <li class="disabled">Superizzi </li>
+                <li><a href=""> Favoritos </a> </li>
+                <li><a href=""> Desafios Prontos </a> </li>
+                <li><a href=""> Novidades </a> </li>
+            </ul>
+        </div>
+        <div class="col-md-10 content">
+            <div class="row-special">
+                <h4> Ultimas Noticias do Blog </h4>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                Desenvolvimento Leandro Araujo / Rodrigo Fioravante / Pablo Diniz
+            </div>
+        </div>
+    </div>
+</footer>
