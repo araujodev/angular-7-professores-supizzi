@@ -6,9 +6,9 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatToolbarModule } from "@angular/material/toolbar";
+import { MatCardModule } from "@angular/material/card";
 
 import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
-import { fakeBackendProvider } from "./_helpers";
 import { JwtInterceptor, ErrorInterceptor } from "./_helpers";
 
 import { HomeComponent } from "./home";
@@ -21,6 +21,7 @@ import { LoginComponent } from "./login";
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
+    MatCardModule,
     ReactiveFormsModule,
     HttpClientModule
   ],

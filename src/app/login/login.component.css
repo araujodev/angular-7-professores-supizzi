@@ -1,0 +1,25 @@
+.card-login {
+  margin-top: 50px;
+  background: #ccc;
+}
+
+.card-login mat-card-title,
+.card-login mat-card-subtitle {
+  color: #000;
+}
+
+.login-container {
+  margin-top: 50px;
+  color: #333 !important;
+}
+.login-container h2 {
+  background: #0058f2;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  border-bottom: 2px solid #0040b1;
+}
+
+.login-container label {
+  color: #333;
+}
