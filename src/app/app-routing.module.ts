@@ -5,6 +5,7 @@ import { HomeComponent } from "./home";
 import { LoginComponent } from "./login";
 import { AuthGuard } from "./_guards";
 import { ProfessorPerfilIndexComponent } from "./professor-perfil-index";
+import { AvisosIndexComponent } from "./avisos-index";
 
 const routes: Routes = [
   {
@@ -15,6 +16,11 @@ const routes: Routes = [
   {
     path: "professor-perfil",
     component: ProfessorPerfilIndexComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: "avisos",
+    component: AvisosIndexComponent,
     canActivate: [AuthGuard]
   },
   {
