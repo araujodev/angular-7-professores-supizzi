@@ -11,11 +11,31 @@
           </a>
         </div>
         <div class="pre-menu">
-          <a href="" class="btn btn-yellow"> Criar </a>
-          <a href="#" routerLink="/avisos">
+          <a
+            href="#"
+            class="btn btn-yellow"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="Crie um novo Desafio."
+          >
+            Criar
+          </a>
+          <a
+            href="#"
+            routerLink="/avisos"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="Avisos Gerais sobre nossos sistemas."
+          >
             <i class="material-icons"> notifications_active </i> Avisos
           </a>
-          <a href="#" routerLink="/professor-perfil">
+          <a
+            href="#"
+            routerLink="/professor-perfil"
+            data-toggle="tooltip"
+            data-placement="bottom"
+            title="Altere planos, senhas e informações pessoais."
+          >
             <i class="material-icons"> person </i> Perfil
           </a>
           <a href="#" (click)="logout()">

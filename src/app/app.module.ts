@@ -16,6 +16,8 @@ import { LoginComponent } from "./login";
 import { LayoutMenuProfessorComponent } from "./layout-menu-professor/layout-menu-professor.component";
 import { ProfessorPerfilIndexComponent } from './professor-perfil-index/professor-perfil-index.component';
 import { AvisosIndexComponent } from './avisos-index/avisos-index.component';
+import { LayoutMenuPerfilComponent } from './layout-menu-perfil/layout-menu-perfil.component';
+import { ProfessorPerfilEditComponent } from './professor-perfil-edit/professor-perfil-edit.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { AvisosIndexComponent } from './avisos-index/avisos-index.component';
     LoginComponent,
     LayoutMenuProfessorComponent,
     ProfessorPerfilIndexComponent,
-    AvisosIndexComponent
+    AvisosIndexComponent,
+    LayoutMenuPerfilComponent,
+    ProfessorPerfilEditComponent
   ],
   imports: [
     BrowserModule,

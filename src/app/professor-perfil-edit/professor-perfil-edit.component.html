@@ -1,0 +1,133 @@
+<div class="slide-header">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12"><h2>Meu Perfil</h2></div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid main-content">
+  <div class="row">
+    <div class="col-md-2 left-menu">
+      <app-layout-menu-perfil></app-layout-menu-perfil>
+    </div>
+    <div class="col-md-10 content">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header">Atualizar Perfil</div>
+            <div class="card-body">
+              <h5 class="card-title">Mantenha seu cadastro atualizado.</h5>
+              <hr />
+              <form [formGroup]="professorPerfilForm" (ngSubmit)="onSubmit()">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="first_name">Primeiro Nome</label>
+                      <input
+                        type="text"
+                        formControlName="first_name"
+                        class="form-control"
+                        [ngClass]="{
+                          'is-invalid': submitted && f.first_name.errors
+                        }"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="last_name">Sobrenome</label>
+                      <input
+                        type="text"
+                        formControlName="last_name"
+                        class="form-control"
+                        [ngClass]="{
+                          'is-invalid': submitted && f.last_name.errors
+                        }"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="cpf">CPF</label>
+                      <input
+                        type="text"
+                        formControlName="cpf"
+                        class="form-control"
+                        [ngClass]="{
+                          'is-invalid': submitted && f.cpf.errors
+                        }"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="email">E-mail</label>
+                      <input
+                        type="text"
+                        formControlName="email"
+                        class="form-control"
+                        [ngClass]="{
+                          'is-invalid': submitted && f.email.errors
+                        }"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <label for="plan_id">Plano Contratado</label>
+                    <div class="input-group mb-3">
+                      <input
+                        type="text"
+                        formControlName="plan_id"
+                        class="form-control"
+                        readonly="readonly"
+                        [ngClass]="{
+                          'is-invalid': submitted && f.plan_id.errors
+                        }"
+                      />
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-info" type="button">
+                          Solicitar Alteração de Plano
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <hr />
+
+                <div class="form-group">
+                  <label for="password"
+                    >Atualizar Senha
+                    <small> <b>Atenção:</b> Caso seja necessário </small></label
+                  >
+                  <input
+                    type="password"
+                    formControlName="password"
+                    class="form-control"
+                    [ngClass]="{
+                      'is-invalid': submitted && f.password.errors
+                    }"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <button [disabled]="loading" class="btn btn-primary">
+                    Atualizar
+                  </button>
+                </div>
+                <div *ngIf="error" class="alert alert-danger">{{ error }}</div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
