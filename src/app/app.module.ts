@@ -14,13 +14,15 @@ import { JwtInterceptor, ErrorInterceptor } from "./_helpers";
 import { HomeComponent } from "./home";
 import { LoginComponent } from "./login";
 import { LayoutMenuProfessorComponent } from "./layout-menu-professor/layout-menu-professor.component";
+import { ProfessorPerfilIndexComponent } from './professor-perfil-index/professor-perfil-index.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
-    LayoutMenuProfessorComponent
+    LayoutMenuProfessorComponent,
+    ProfessorPerfilIndexComponent
   ],
   imports: [
     BrowserModule,

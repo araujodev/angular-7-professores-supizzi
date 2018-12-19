@@ -4,11 +4,17 @@ import { Routes, RouterModule } from "@angular/router";
 import { HomeComponent } from "./home";
 import { LoginComponent } from "./login";
 import { AuthGuard } from "./_guards";
+import { ProfessorPerfilIndexComponent } from "./professor-perfil-index";
 
 const routes: Routes = [
   {
     path: "",
     component: HomeComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: "professor-perfil",
+    component: ProfessorPerfilIndexComponent,
     canActivate: [AuthGuard]
   },
   {
