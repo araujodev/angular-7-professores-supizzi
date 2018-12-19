@@ -13,10 +13,15 @@ import { JwtInterceptor, ErrorInterceptor } from "./_helpers";
 
 import { HomeComponent } from "./home";
 import { LoginComponent } from "./login";
-import { LayoutMenuProfessorComponent } from './layout-menu-professor/layout-menu-professor.component';
+import { LayoutMenuProfessorComponent } from "./layout-menu-professor/layout-menu-professor.component";
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, LoginComponent, LayoutMenuProfessorComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    LoginComponent,
+    LayoutMenuProfessorComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
