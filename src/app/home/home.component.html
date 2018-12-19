@@ -9,20 +9,79 @@
 <div class="container-fluid main-content">
   <div class="row">
     <div class="col-md-2 left-menu">
-      <ul class="menu">
-        <li class="disabled">Professor</li>
-        <li><a href=""> Questões </a></li>
-        <li><a href=""> Desafios </a></li>
-        <li><a href=""> Salas de Aula </a></li>
-        <li><a href=""> Alunos </a></li>
-        <li class="disabled">Superizzi</li>
-        <li><a href=""> Favoritos </a></li>
-        <li><a href=""> Desafios Prontos </a></li>
-        <li><a href=""> Novidades </a></li>
-      </ul>
+      <app-layout-menu-professor></app-layout-menu-professor>
     </div>
     <div class="col-md-10 content">
-      <div class="row-special"><h4>Ultimas Noticias do Blog</h4></div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">Questões</div>
+            <div class="card-body">
+              <h5 class="card-title">Contribua e seja recompensado</h5>
+              <p class="card-text">
+                Ajude-nos a formular questões e receba mensalidades grátis.
+              </p>
+              <a href="#" class="btn btn-primary">Criar Questão</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">Desafios</div>
+            <div class="card-body">
+              <h5 class="card-title">Extrato da sua conta</h5>
+              <p class="card-text">
+                Você tem <span class="badge badge-info">3</span> desafios que
+                ainda não foram aplicados.
+              </p>
+              <a href="#" class="btn btn-primary">Aplicar Desafio</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">
+              Salas de Aula - <small> Recém adicionadas </small>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <a href=""> Turma 1º Ano/2018 </a>
+              </li>
+              <li class="list-group-item">
+                <a href=""> Turma 5º Ano/2018 </a>
+              </li>
+              <li class="list-group-item">
+                <a href=""> Turma 6º Ano/2018 </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">Alunos</div>
+            <div class="card-body">
+              <h5 class="card-title">Relatório Geral</h5>
+              <p class="card-text">
+                Exporte em formato <b>.xls</b> a lista dos alunos por Salas de
+                aula.
+              </p>
+              <a href="#" class="btn btn-primary">Gerar Planilha</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">Alunos</div>
+            <div class="card-body">
+              <h5 class="card-title">Importação</h5>
+              <p class="card-text">
+                Importe a lista de alunos para as salas de aulas.
+              </p>
+              <a href="#" class="btn btn-primary">Importar Lista</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
