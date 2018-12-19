@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-professor-perfil-index',
-  templateUrl: './professor-perfil-index.component.html',
-  styleUrls: ['./professor-perfil-index.component.css']
+  selector: "app-professor-perfil-index",
+  templateUrl: "./professor-perfil-index.component.html",
+  styleUrls: ["./professor-perfil-index.component.css"]
 })
 export class ProfessorPerfilIndexComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
