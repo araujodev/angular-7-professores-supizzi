@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 
 @Component({
   selector: "app-professor-perfil-edit",
@@ -6,7 +7,9 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./professor-perfil-edit.component.css"]
 })
 export class ProfessorPerfilEditComponent implements OnInit {
-  constructor() {}
+  professorPerfilEditForm: FormGroup;
+
+  constructor(private formBuilder: FormBuilder) {}
 
   ngOnInit() {}
 }
