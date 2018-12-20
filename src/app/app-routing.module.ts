@@ -7,7 +7,8 @@ import { AuthGuard } from "./_guards";
 import { ProfessorPerfilIndexComponent } from "./professor-perfil-index";
 import { AvisosIndexComponent } from "./avisos-index";
 import { ProfessorPerfilEditComponent } from "./professor-perfil-edit/professor-perfil-edit.component";
-import { ProfessorPerfilPlanoComponent } from '@/professor-perfil-plano';
+import { ProfessorPerfilPlanoComponent } from "@/professor-perfil-plano";
+import { ProfessorPerfilEscolasComponent } from "./professor-perfil-escolas";
 
 const routes: Routes = [
   {
@@ -28,6 +29,11 @@ const routes: Routes = [
   {
     path: "professor-plano",
     component: ProfessorPerfilPlanoComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: "professor-escolas",
+    component: ProfessorPerfilEscolasComponent,
     canActivate: [AuthGuard]
   },
   {

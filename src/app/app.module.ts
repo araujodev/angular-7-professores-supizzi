@@ -19,6 +19,7 @@ import { AvisosIndexComponent } from './avisos-index/avisos-index.component';
 import { LayoutMenuPerfilComponent } from './layout-menu-perfil/layout-menu-perfil.component';
 import { ProfessorPerfilEditComponent } from './professor-perfil-edit/professor-perfil-edit.component';
 import { ProfessorPerfilPlanoComponent } from './professor-perfil-plano/professor-perfil-plano.component';
+import { ProfessorPerfilEscolasComponent } from './professor-perfil-escolas/professor-perfil-escolas.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ProfessorPerfilPlanoComponent } from './professor-perfil-plano/professo
     AvisosIndexComponent,
     LayoutMenuPerfilComponent,
     ProfessorPerfilEditComponent,
-    ProfessorPerfilPlanoComponent
+    ProfessorPerfilPlanoComponent,
+    ProfessorPerfilEscolasComponent
   ],
   imports: [
     BrowserModule,
