@@ -18,6 +18,7 @@ import { ProfessorPerfilIndexComponent } from './professor-perfil-index/professo
 import { AvisosIndexComponent } from './avisos-index/avisos-index.component';
 import { LayoutMenuPerfilComponent } from './layout-menu-perfil/layout-menu-perfil.component';
 import { ProfessorPerfilEditComponent } from './professor-perfil-edit/professor-perfil-edit.component';
+import { ProfessorPerfilPlanoComponent } from './professor-perfil-plano/professor-perfil-plano.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ProfessorPerfilEditComponent } from './professor-perfil-edit/professor-
     ProfessorPerfilIndexComponent,
     AvisosIndexComponent,
     LayoutMenuPerfilComponent,
-    ProfessorPerfilEditComponent
+    ProfessorPerfilEditComponent,
+    ProfessorPerfilPlanoComponent
   ],
   imports: [
     BrowserModule,

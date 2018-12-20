@@ -7,6 +7,7 @@ import { AuthGuard } from "./_guards";
 import { ProfessorPerfilIndexComponent } from "./professor-perfil-index";
 import { AvisosIndexComponent } from "./avisos-index";
 import { ProfessorPerfilEditComponent } from "./professor-perfil-edit/professor-perfil-edit.component";
+import { ProfessorPerfilPlanoComponent } from '@/professor-perfil-plano';
 
 const routes: Routes = [
   {
@@ -22,6 +23,11 @@ const routes: Routes = [
   {
     path: "professor-atualizar",
     component: ProfessorPerfilEditComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: "professor-plano",
+    component: ProfessorPerfilPlanoComponent,
     canActivate: [AuthGuard]
   },
   {
