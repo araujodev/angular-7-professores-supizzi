@@ -9,6 +9,7 @@ import { AvisosIndexComponent } from "./avisos-index";
 import { ProfessorPerfilEditComponent } from "./professor-perfil-edit/professor-perfil-edit.component";
 import { ProfessorPerfilPlanoComponent } from "@/professor-perfil-plano";
 import { ProfessorPerfilEscolasComponent } from "./professor-perfil-escolas";
+import { ProfessorQuestoesIndexComponent } from "./professor-questoes-index/professor-questoes-index.component";
 
 const routes: Routes = [
   {
@@ -34,6 +35,11 @@ const routes: Routes = [
   {
     path: "professor-escolas",
     component: ProfessorPerfilEscolasComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: "professor-questoes",
+    component: ProfessorQuestoesIndexComponent,
     canActivate: [AuthGuard]
   },
   {
