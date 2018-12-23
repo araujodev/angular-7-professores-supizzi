@@ -1,0 +1,19 @@
+.card {
+  margin-bottom: 30px;
+}
+
+.btn {
+  margin-right: 5px;
+}
+
+.btn i {
+  color: #fff;
+}
+
+.desafio-item .card-header {
+  font-size: 23px;
+}
+
+.badge {
+  margin-right: 5px;
+}

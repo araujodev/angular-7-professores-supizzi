@@ -29,7 +29,7 @@ export class AuthenticationService {
       })
       .pipe(
         map(user => {
-          let userObject = {
+          const userObject = {
             id: 1,
             username: "teste",
             firstName: "first",

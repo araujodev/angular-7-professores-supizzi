@@ -9,7 +9,7 @@ import { AvisosIndexComponent } from "./avisos-index";
 import { ProfessorPerfilEditComponent } from "./professor-perfil-edit/professor-perfil-edit.component";
 import { ProfessorPerfilPlanoComponent } from "@/professor-perfil-plano";
 import { ProfessorPerfilEscolasComponent } from "./professor-perfil-escolas";
-import { ProfessorQuestoesIndexComponent } from "./professor-questoes-index/professor-questoes-index.component";
+import { ProfessorDesafiosIndexComponent } from "./professor-desafios-index/professor-desafios-index.component";
 
 const routes: Routes = [
   {
@@ -38,8 +38,8 @@ const routes: Routes = [
     canActivate: [AuthGuard]
   },
   {
-    path: "professor-questoes",
-    component: ProfessorQuestoesIndexComponent,
+    path: "desafios",
+    component: ProfessorDesafiosIndexComponent,
     canActivate: [AuthGuard]
   },
   {

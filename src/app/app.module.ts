@@ -14,13 +14,13 @@ import { JwtInterceptor, ErrorInterceptor } from "./_helpers";
 import { HomeComponent } from "./home";
 import { LoginComponent } from "./login";
 import { LayoutMenuProfessorComponent } from "./layout-menu-professor/layout-menu-professor.component";
-import { ProfessorPerfilIndexComponent } from './professor-perfil-index/professor-perfil-index.component';
-import { AvisosIndexComponent } from './avisos-index/avisos-index.component';
-import { LayoutMenuPerfilComponent } from './layout-menu-perfil/layout-menu-perfil.component';
-import { ProfessorPerfilEditComponent } from './professor-perfil-edit/professor-perfil-edit.component';
-import { ProfessorPerfilPlanoComponent } from './professor-perfil-plano/professor-perfil-plano.component';
-import { ProfessorPerfilEscolasComponent } from './professor-perfil-escolas/professor-perfil-escolas.component';
-import { ProfessorQuestoesIndexComponent } from './professor-questoes-index/professor-questoes-index.component';
+import { ProfessorPerfilIndexComponent } from "./professor-perfil-index/professor-perfil-index.component";
+import { AvisosIndexComponent } from "./avisos-index/avisos-index.component";
+import { LayoutMenuPerfilComponent } from "./layout-menu-perfil/layout-menu-perfil.component";
+import { ProfessorPerfilEditComponent } from "./professor-perfil-edit/professor-perfil-edit.component";
+import { ProfessorPerfilPlanoComponent } from "./professor-perfil-plano/professor-perfil-plano.component";
+import { ProfessorPerfilEscolasComponent } from "./professor-perfil-escolas/professor-perfil-escolas.component";
+import { ProfessorDesafiosIndexComponent } from './professor-desafios-index/professor-desafios-index.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +34,7 @@ import { ProfessorQuestoesIndexComponent } from './professor-questoes-index/prof
     ProfessorPerfilEditComponent,
     ProfessorPerfilPlanoComponent,
     ProfessorPerfilEscolasComponent,
-    ProfessorQuestoesIndexComponent
+    ProfessorDesafiosIndexComponent
   ],
   imports: [
     BrowserModule,
